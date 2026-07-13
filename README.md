@@ -1,56 +1,116 @@
-# 📊 Customer Churn Prediction System
-
 <p align="center">
   <img src="figures/banner.png" alt="Customer Churn Prediction System Banner" width="100%">
 </p>
 
+<h1 align="center">📊 Customer Churn Prediction System</h1>
+
+<p align="center">
+An end-to-end Machine Learning project that predicts customer churn using XGBoost and an interactive Streamlit web application.
+</p>
+
 <p align="center">
 
-![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
-![Streamlit](https://img.shields.io/badge/Streamlit-Live-red?logo=streamlit)
-![XGBoost](https://img.shields.io/badge/XGBoost-Classifier-green)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?logo=scikitlearn)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+<img src="https://img.shields.io/badge/Python-3.12-blue?logo=python" />
+<img src="https://img.shields.io/badge/Streamlit-Deployed-FF4B4B?logo=streamlit" />
+<img src="https://img.shields.io/badge/XGBoost-Classifier-2E8B57" />
+<img src="https://img.shields.io/badge/Scikit--Learn-Latest-F7931E?logo=scikitlearn" />
+<img src="https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas" />
+<img src="https://img.shields.io/badge/License-MIT-green" />
 
+</p>
+
+<p align="center">
+<a href="https://analyticpalmer-customer-churn-prediction-system-appapp-z0tzqn.streamlit.app/">🚀 Live Demo</a> •
+<a href="https://github.com/AnalyticPalmer/customer-churn-prediction-system">💻 GitHub Repository</a>
 </p>
 
 ---
 
-# 📖 Overview
+# 📑 Table of Contents
 
-The **Customer Churn Prediction System** is an end-to-end machine learning application that predicts whether a customer is likely to leave a subscription-based business.
+* Project Overview
+* Business Problem
+* Features
+* Technology Stack
+* Project Structure
+* Machine Learning Pipeline
+* Models Trained
+* Application Screenshots
+* Installation
+* Running the Application
+* Dataset
+* Future Improvements
+* Author
+* License
 
-The project combines **data preprocessing**, **machine learning**, and an interactive **Streamlit** web application to provide instant churn predictions and downloadable prediction reports.
+---
 
-The model was trained using the **Telco Customer Churn Dataset** and uses an **XGBoost Classifier** to generate accurate predictions based on customer demographics, service usage, billing information, and account history.
+# 📖 Project Overview
+
+Customer churn is a major challenge for subscription-based businesses. Losing existing customers often costs significantly more than acquiring new ones.
+
+This project uses Machine Learning to identify customers who are likely to leave a telecom company based on their demographics, account information, billing details, and subscribed services.
+
+The solution includes a complete end-to-end machine learning pipeline, from data preprocessing and model training to deployment as an interactive web application using Streamlit.
+
+---
+
+# 💼 Business Problem
+
+Companies lose revenue whenever customers cancel their subscriptions.
+
+By predicting churn before it happens, businesses can:
+
+* Improve customer retention
+* Reduce revenue loss
+* Identify high-risk customers
+* Support targeted marketing campaigns
+* Improve customer satisfaction
 
 ---
 
 # ✨ Features
 
-* Predict customer churn in real time
 * Interactive Streamlit dashboard
-* User-friendly sidebar for customer information
+* Real-time customer churn prediction
 * Churn probability score
 * Risk level classification
-* Confidence score visualization
-* Customer summary table
-* Downloadable prediction report (CSV)
-* Clean and responsive interface
-* Modular Python architecture
+* Customer information summary
+* Download prediction results as CSV
+* Responsive user interface
+* Clean project architecture
 
 ---
 
 # 🛠 Technology Stack
 
-| Category            | Technology            |
-| ------------------- | --------------------- |
-| Language            | Python                |
-| Machine Learning    | XGBoost, Scikit-learn |
-| Data Processing     | Pandas, NumPy         |
-| Web Framework       | Streamlit             |
-| Model Serialization | Joblib                |
-| Version Control     | Git & GitHub          |
+### Programming
+
+* Python
+
+### Machine Learning
+
+* Scikit-learn
+* XGBoost
+
+### Data Processing
+
+* Pandas
+* NumPy
+
+### Visualization
+
+* Streamlit
+
+### Model Serialization
+
+* Joblib
+
+### Development Tools
+
+* Git
+* GitHub
+* VS Code
 
 ---
 
@@ -58,73 +118,76 @@ The model was trained using the **Telco Customer Churn Dataset** and uses an **X
 
 ```text
 customer-churn-prediction-system/
-
+│
 ├── app/
 │   ├── app.py
-│   ├── ui.py
-│   ├── prediction.py
+│   ├── config.py
 │   ├── model_loader.py
+│   ├── prediction.py
 │   ├── styles.py
-│   ├── utils.py
-│   └── config.py
+│   ├── ui.py
+│   └── utils.py
 │
 ├── data/
-├── docs/
+│   ├── raw/
+│   └── processed/
+│
 ├── figures/
+│
 ├── models/
+│
 ├── notebooks/
+│
 ├── reports/
+│
 ├── src/
+│
 ├── tests/
 │
 ├── requirements.txt
 ├── README.md
 ├── LICENSE
-└── .gitignore
+└── main.py
 ```
 
 ---
 
-# 🧠 Machine Learning Pipeline
+# 🔄 Machine Learning Pipeline
 
-```
-Customer Information
-        │
-        ▼
-Data Preprocessing
-        │
-        ▼
-Feature Engineering
-        │
-        ▼
-XGBoost Classifier
-        │
-        ▼
-Prediction
-        │
-        ▼
-Probability Score
-        │
-        ▼
-Risk Classification
-        │
-        ▼
-Prediction Report
-```
+1. Data Collection
+2. Data Cleaning
+3. Exploratory Data Analysis (EDA)
+4. Feature Engineering
+5. Data Preprocessing
+6. Model Training
+7. Model Evaluation
+8. Model Selection
+9. Model Deployment
+10. Streamlit Application Development
 
 ---
 
-# 📷 Application Preview
+# 🤖 Models Trained
+
+* Logistic Regression
+* Random Forest Classifier
+* XGBoost Classifier ✅ (Selected Model)
+
+The XGBoost model produced the best performance and was selected for deployment.
+
+---
+
+# 🖥 Application Screenshots
 
 ## Home Page
 
-![Home Page](figures/app-home.png)
+![Home](figures/app-home.png)
 
 ---
 
 ## Prediction Result
 
-![Prediction Result](figures/prediction-result.png)
+![Prediction](figures/prediction-result.png)
 
 ---
 
@@ -134,20 +197,21 @@ Prediction Report
 
 ---
 
-## Download Prediction Report
+## Download Report
 
 ![Download Report](figures/download-report.png)
 
 ---
 
-# ⚙️ Installation
+# 🚀 Installation
 
 Clone the repository:
 
 ```bash
 git clone https://github.com/AnalyticPalmer/customer-churn-prediction-system.git
+```
 
-Navigate into the project:
+Move into the project folder:
 
 ```bash
 cd customer-churn-prediction-system
@@ -159,9 +223,9 @@ Create a virtual environment:
 python -m venv venv
 ```
 
-Activate the environment.
+Activate it.
 
-**Windows**
+Windows:
 
 ```bash
 venv\Scripts\activate
@@ -175,27 +239,27 @@ pip install -r requirements.txt
 
 ---
 
-# ▶️ Run the Application
+# ▶ Running the Application
 
-From the project root:
+Start the Streamlit application:
 
 ```bash
 streamlit run app/app.py
 ```
 
+The application will open in your default browser.
+
 ---
 
-# 📊 Model Information
+# 📊 Dataset
 
-**Algorithm**
+**Dataset:** Telco Customer Churn Dataset
 
-* XGBoost Classifier
+Target Variable:
 
-**Prediction Target**
+* Churn
 
-* Customer Churn
-
-**Input Features**
+Key Features:
 
 * Gender
 * Senior Citizen
@@ -203,10 +267,8 @@ streamlit run app/app.py
 * Dependents
 * Tenure
 * Phone Service
-* Multiple Lines
 * Internet Service
 * Online Security
-* Online Backup
 * Device Protection
 * Tech Support
 * Streaming TV
@@ -219,17 +281,18 @@ streamlit run app/app.py
 
 ---
 
-# 🚀 Future Improvements
+# 📈 Future Improvements
 
-* Docker containerization
 * Batch prediction using CSV upload
-* SHAP explainability
-* FastAPI REST API
+* REST API with FastAPI
+* Docker containerization
+* SHAP explainability dashboard
+* Feature importance visualization
 * User authentication
 * Prediction history
-* Cloud deployment
-* Model monitoring
-* Automated CI/CD pipeline
+* CI/CD pipeline
+* Cloud deployment using Docker
+* Model monitoring and retraining
 
 ---
 
@@ -237,15 +300,39 @@ streamlit run app/app.py
 
 **Palmer Ogiriki**
 
-* Data Analyst
-* Machine Learning Engineer
+Quality Assurance Engineer | Data Analyst | Machine Learning Engineer
+
+**GitHub**
+
+https://github.com/AnalyticPalmer
+
+**LinkedIn**
+
+https://www.linkedin.com/in/palmer-ogiriki/
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+If you have suggestions or improvements:
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit your changes.
+4. Open a Pull Request.
+
+---
+
+# ⭐ Support
+
+If you found this project useful, please consider giving it a ⭐ on GitHub.
+
+It helps others discover the project and supports future improvements.
 
 ---
 
 # 📄 License
 
 This project is licensed under the MIT License.
-
----
-
-⭐ If you found this project useful, consider starring the repository.
