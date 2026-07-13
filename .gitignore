@@ -1,0 +1,78 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Environment Variables
+.env
+
+# Logs
+*.log
+
+# Cache
+.cache/
+
+# Pytest
+.pytest_cache/
+
+# Build
+dist/
+build/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# ML Models
+# Ignore model artifacts except deployment models
+*.joblib
+
+# Keep deployed models
+!models/*.pkl
+
+# Local Python installation
+Lib/
+Scripts/
+Include/
+share/
+etc/
+pyvenv.cfg
+
+# Python virtual environment
+venv/
+.venv/
+env/
+Lib/
+Scripts/
+Include/
+share/
+etc/
+pyvenv.cfg
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Cache
+__pycache__/
+*.py[cod]
+
+# Keep deployment models
+!models/*.pkl
+
+# Ignore joblib artifacts
+*.joblib
