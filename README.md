@@ -308,7 +308,7 @@ https://github.com/AnalyticPalmer
 
 **LinkedIn**
 
-https://www.linkedin.com/in/palmer-ogiriki/
+https://www.linkedin.com/in/palmerogiriki/
 
 ---
 
